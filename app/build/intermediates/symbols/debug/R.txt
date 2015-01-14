@@ -347,7 +347,7 @@ int id action_menu_presenter 0x7f080003
 int id action_mode_bar 0x7f08002e
 int id action_mode_bar_stub 0x7f08002d
 int id action_mode_close_button 0x7f080020
-int id action_settings 0x7f08003f
+int id action_settings 0x7f080043
 int id activity_chooser_view_content 0x7f080021
 int id always 0x7f080016
 int id beginning 0x7f080013
@@ -367,12 +367,15 @@ int id homeAsUp 0x7f08000d
 int id icon 0x7f080026
 int id ifRoom 0x7f080018
 int id image 0x7f080023
+int id imageDetails 0x7f080041
 int id listMode 0x7f080009
 int id list_item 0x7f080025
+int id message 0x7f080040
 int id middle 0x7f080015
 int id never 0x7f080019
 int id none 0x7f08000e
 int id normal 0x7f08000a
+int id photo 0x7f08003f
 int id progress_circular 0x7f080005
 int id progress_horizontal 0x7f080006
 int id radio 0x7f08002b
@@ -389,6 +392,7 @@ int id search_voice_btn 0x7f08003e
 int id shortcut 0x7f08002a
 int id showCustom 0x7f08000f
 int id showHome 0x7f080010
+int id showImg 0x7f080042
 int id showTitle 0x7f080011
 int id split_action_bar 0x7f080007
 int id submit_area 0x7f08003c
@@ -422,7 +426,7 @@ int layout abc_screen_toolbar 0x7f030013
 int layout abc_search_dropdown_item_icons_2line 0x7f030014
 int layout abc_search_view 0x7f030015
 int layout abc_simple_dropdown_hint 0x7f030016
-int layout activity_home 0x7f030017
+int layout activity_camera_photo_capture 0x7f030017
 int layout support_simple_spinner_dropdown_item 0x7f030018
 int menu menu_home 0x7f0c0000
 int string abc_action_bar_home_description 0x7f0a0000
