@@ -30,6 +30,7 @@ import java.util.ArrayList;
 public class CameraPhotoCapture extends Activity {
 
     final static int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 1;
+
     private long then;
     private int longClickDuration = 1000;
     Uri imageUri                      = null;
@@ -83,13 +84,15 @@ pointsList=new ArrayList<>(10);
             public void onClick(View v) {
 
                 /*************************** Camera Intent Start ************************/
-   // Define the file-name to save photo taken by Camera activity
+
+                // Define the file-name to save photo taken by Camera activity
                 String fileName = "papermap"+ SystemClock.elapsedRealtime() +".jpg";
 
                 // Create parameters for Intent with filename
 
                 ContentValues values = new ContentValues();
-		   values.put(MediaStore.Images.Media.TITLE, fileName);
+
+                values.put(MediaStore.Images.Media.TITLE, fileName);
 
                 values.put(MediaStore.Images.Media.DESCRIPTION,"Image capture by camera");
 
@@ -129,10 +132,15 @@ pointsList=new ArrayList<>(10);
                 /*********** Load Captured Image And Data Start ****************/
 
                 String imageId = convertImageUriToFile( imageUri,CameraActivity);
-        //  Create and excecute AsyncTask to load capture image
+
+
+                //  Create and excecute AsyncTask to load capture image
+
                 new LoadImagesFromSDCard().execute(""+imageId);
 
                 /*********** Load Captured Image And Data End ****************/
+
+
             } else if ( resultCode == RESULT_CANCELED) {
 
                 Toast.makeText(this, " Picture was not taken ", Toast.LENGTH_SHORT).show();
@@ -172,7 +180,8 @@ pointsList=new ArrayList<>(10);
             );
 
             //  Get Query Data
- int columnIndex = cursor.getColumnIndexOrThrow(MediaStore.Images.Media._ID);
+
+            int columnIndex = cursor.getColumnIndexOrThrow(MediaStore.Images.Media._ID);
             int columnIndexThumb = cursor.getColumnIndexOrThrow(MediaStore.Images.Thumbnails._ID);
             int file_ColumnIndex = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
 

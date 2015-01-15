@@ -4,4 +4,4 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>
-<!-- From: file:/home/aarthi/AndroidStudioProjects/locatormaps/app/src/main/res/menu/menu_home.xml -->
+<!-- From: file:/home/tarun/AndroidStudioProjects/common-property-map/app/src/main/res/menu/menu_home.xml -->
