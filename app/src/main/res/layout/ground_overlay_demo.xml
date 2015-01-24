@@ -26,7 +26,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_gravity="center_vertical"
-      android:text="@string/transparency"/>
+      android:text="transparency"/>
     <SeekBar
       android:id="@+id/transparencySeekBar"
       android:layout_width="fill_parent"
@@ -44,13 +44,6 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:background="#D000"
-      android:padding="5dp">
-      <Button
-        android:id="@+id/switchImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="switchImage"
-        android:text="@string/switch_image"/>
-    </FrameLayout>
+      android:padding="5dp"> </FrameLayout>
   </RelativeLayout>
 </LinearLayout>
