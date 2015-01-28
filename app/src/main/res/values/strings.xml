@@ -4,5 +4,9 @@
     <string name="app_name">locator maps</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+        <string name="menu_settings">Settings</string>
+        <string name="str_btn_find">Find</string>
+        <string name="hnt_et_location">Enter location</string>
+    </resources>
 
-</resources>
+
